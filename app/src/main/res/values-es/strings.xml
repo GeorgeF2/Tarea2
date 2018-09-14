@@ -1,17 +1,17 @@
 <resources>
-    <string name="app_name">ExamTest</string>
-    <string name="title">Electic Bicycle</string>
+    <string name="app_name">PruebaExamen</string>
+    <string name="title">Bicicleta Electrica</string>
     <string name="color">Color</string>
-    <string name="description">Description</string>
-    <string name="measurements">Measurements</string>
+    <string name="description">Descripcion</string>
+    <string name="measurements">Medidas</string>
     <string name="des_lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis diam, placerat ut diam vitae, tincidunt volutpat augue. Maecenas eleifend placerat eleifend.</string>
     <string name="mea_lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis diam, placerat ut diam vitae, tincidunt volutpat augue. Maecenas eleifend placerat eleifend. Integer aliquet quam sit amet augue elementum placerat sit amet elementum nisl. Donec tincidunt eros eros, nec ultricies leo condimentum a. Sed a scelerisque elit, varius facilisis est.</string>
-    <string name="like">+1 to Electric Bicycle</string>
+    <string name="like">+1 a Bicicleta Electrica</string>
     <string name="small">S</string>
     <string name="medium">M</string>
     <string name="large">L</string>
     <string name="huge">XL</string>
-    <string name="add">Add to Cart</string>
-    <string name="added">Added to Cart</string>
-    <string name="added_toast">Item	already	is	in	Cart</string>
+    <string name="add">Agregar al Carrito</string>
+    <string name="added">Agregado al Carrito</string>
+    <string name="added_toast">Ya se encuentra en el carro</string>
 </resources>
