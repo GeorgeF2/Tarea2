@@ -20,4 +20,8 @@ public class ActivityMain extends AppCompatActivity {
     public void Like(View v){
         Toast.makeText(this, R.string.like, Toast.LENGTH_LONG).show();
     }
+
+    public void Size(View v){
+
+    }
 }

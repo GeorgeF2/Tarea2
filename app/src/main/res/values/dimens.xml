@@ -5,4 +5,5 @@
     <dimen name="padding_dimen">10dp</dimen>
     <dimen name="like_dimen">50dp</dimen>
     <dimen name="button_dimen">50dp</dimen>
+    <dimen name="button_with_dimen">175dp</dimen>
 </resources>

@@ -31,6 +31,7 @@
                 android:background="@android:color/holo_blue_light"
                 />
 
+            <!--Title and like button block-->
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -58,6 +59,7 @@
 
             </LinearLayout>
 
+            <!--Color radio button block-->
             <LinearLayout
                 android:id="@+id/activity_main_color"
                 android:layout_width="match_parent"
@@ -76,7 +78,8 @@
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/padding_dimen">
 
                     <RadioButton
                         android:id="@+id/rb_gray"
@@ -114,7 +117,102 @@
 
             </LinearLayout>
 
+            <!--Size block-->
+            <LinearLayout
+                android:id="@+id/activity_main_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_dimen"
+                android:layout_below="@id/activity_main_color">
 
+                <Button
+                    android:id="@+id/b_small"
+                    android:layout_width="@dimen/button_dimen"
+                    android:layout_height="@dimen/button_dimen"
+                    android:onClick="Size"
+                    android:text="@string/small"/>
+
+                <Button
+                    android:id="@+id/b_medium"
+                    android:layout_width="@dimen/button_dimen"
+                    android:layout_height="@dimen/button_dimen"
+                    android:onClick="Size"
+                    android:text="@string/medium"/>
+
+                <Button
+                    android:id="@+id/b_large"
+                    android:layout_width="@dimen/button_dimen"
+                    android:layout_height="@dimen/button_dimen"
+                    android:onClick="Size"
+                    android:text="@string/large"/>
+
+                <Button
+                    android:id="@+id/b_huge"
+                    android:layout_width="@dimen/button_dimen"
+                    android:layout_height="@dimen/button_dimen"
+                    android:onClick="Size"
+                    android:text="@string/huge"/>
+
+            </LinearLayout>
+
+            <!--Description block-->
+            <LinearLayout
+                android:id="@+id/activity_main_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/activity_main_size">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"
+                    android:textSize="@dimen/subtitle_dimen"
+                    android:textStyle="bold"
+                    android:padding="@dimen/subtitle_dimen"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/des_lorem"
+                    android:paddingHorizontal="@dimen/subtitle_dimen"/>
+
+            </LinearLayout>
+
+            <!--Measurements block-->
+            <LinearLayout
+                android:id="@+id/activity_main_measure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/activity_main_description">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/measurements"
+                    android:textSize="@dimen/subtitle_dimen"
+                    android:textStyle="bold"
+                    android:padding="@dimen/subtitle_dimen"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mea_lorem"
+                    android:paddingHorizontal="@dimen/subtitle_dimen"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/activity_main_cart"
+                android:layout_width="@dimen/button_with_dimen"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_main_measure"
+                android:padding="@dimen/padding_dimen"
+                android:text="@string/add"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/gray"/>
 
         </RelativeLayout>
 
