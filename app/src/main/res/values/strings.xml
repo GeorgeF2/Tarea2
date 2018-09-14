@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Tarea2</string>
+    <string name="title">Electic Bicycle</string>
+    <string name="color">Color</string>
+    <string name="description">Description</string>
+    <string name="measurements">Measurements</string>
+    <string name="des_lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis diam, placerat ut diam vitae, tincidunt volutpat augue. Maecenas eleifend placerat eleifend. Integer aliquet quam sit amet augue elementum placerat sit amet elementum nisl. Donec tincidunt eros eros, nec ultricies leo condimentum a. Sed a scelerisque elit, varius facilisis est.</string>
+    <string name="mea_lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis diam, placerat ut diam vitae, tincidunt volutpat augue. Maecenas eleifend placerat eleifend. Integer aliquet quam sit amet augue elementum placerat sit amet elementum nisl. Donec tincidunt eros eros, nec ultricies leo condimentum a. Sed a scelerisque elit, varius facilisis est. Aliquam risus massa, efficitur vitae mollis sit amet, rutrum quis risus. Pellentesque vel mi libero. Nunc blandit lacinia diam. Aliquam vitae erat tellus. Aliquam tempor tempor elit, id condimentum est lobortis sodales. Cras luctus sapien sed dictum cursus. Proin dui nisl, sagittis sit amet accumsan pellentesque, aliquam at erat. Ut lobortis enim dolor, sit amet vehicula tellus volutpat vitae. Phasellus quis condimentum felis. In purus est, iaculis et porta at, volutpat eu neque.</string>
+    <string name="like">+1 to Electric Bicycle</string>
 </resources>

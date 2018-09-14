@@ -1,18 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityMain">
+    tools:context=".ActivityMain"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bike"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/activity_main_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1.5dp"
+                android:padding="@dimen/padding_dimen"
+                android:background="@android:color/holo_blue_light"
+                />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_main_line"
+                android:padding="@dimen/padding_dimen"
+                android:id="@+id/activity_main_title"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/title"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/title_dimen"
+                    android:textColor="@android:color/black"/>
+
+                <ImageButton
+                    android:layout_width="@dimen/like_dimen"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/like"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/white"
+                    android:onClick="Like"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_main_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/activity_main_title">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/color"
+                    android:textSize="@dimen/subtitle_dimen"
+                    android:textStyle="bold"
+                    android:padding="@dimen/padding_dimen" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_dimen"
+                        android:buttonTint="@color/gray"
+                        android:onClick="Color"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_brown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_dimen"
+                        android:buttonTint="@color/brown"
+                        android:onClick="Color"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_pink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_dimen"
+                        android:buttonTint="@color/pink"
+                        android:onClick="Color"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_dimen"
+                        android:buttonTint="@color/black"
+                        android:onClick="Color"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
